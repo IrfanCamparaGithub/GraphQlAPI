@@ -1,0 +1,17 @@
+type Query{
+    proteinBars : [proteinBar]
+    proteinBarById(id:Int):proteinBar
+}
+type proteinBar{
+    id: ID,
+    name: String,
+    flavorCategory: String,
+    calories: Int,
+    gramsProtein: Int,
+    lowCalorie: isLowCalorie
+
+}
+type isLowCalorie{
+    id: ID,
+    lowCalorie:Boolean
+}
